@@ -31,37 +31,180 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        <h3>Android Resizer Toolkit Documentation</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>I love Android, but one of the most boring tasks I have to do when designing a UI is to create the full set of drawables for all resolutions; so I've decided to create a simple extension for Photoshop for automating this kind of tasks.</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<h3>Enter Android Resizer Toolkit</h3>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+With this panel you will be able to generate a set of icons for the main Android dpi resolutions (<em>xhdpi</em>, <em>hdpi</em>, <em>mdpi</em>, <em>ldpi</em>), from a single image or even from a grid of images.
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+As an example, you can create an animation using your favorite tool (for instance Flash Pro), generate a spritesheet and then export each single image directly in your project (the tool will take care of creating the corresponding drawable folders if they do not exist).
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<h3>Download</h3>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+The extension can be <a href="android_resizer_toolkit.zip">freely downloaded as a .zip file</a>.
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<h3>Opening the Panel</h3>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+To open the panel from Photoshop, choose <em>Window &gt; Extensions &gt; Android Resizer Toolkit</em> as shown in the following picture.
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<a href="images/android_resizer_toolkit_01_big.png"><img src="images/android_resizer_toolkit_01.png" alt="Opening the toolkit" style="width: 490px" /></a>
+<div style="clear:both;"></div>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<h3>The Panel Interface</h3>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+Exporting drawables for Android is divided in two steps:
+
+<ol>
+	<li><em>Step 1</em>: setting the section size and choosing the drawables size</li>
+	<li><em>Step 2</em>: setting the filenames, choosing the export path and generating the drawables</li>
+</ol>
+
+<img src="images/android_resizer_toolkit_02.png" alt="Step 1" style="width: 329px;" />
+<div style="clear:both;"></div>
+
+<img src="images/android_resizer_toolkit_031.png" alt="Step 2" style="width: 329px" />
+<div style="clear:both;"></div>
+
+<h3>Step 1 - Setting the section size and choosing the drawables size</h3>
+
+The first section of the panel lets you define the dimensions for the drawables. Here's the main features:<br />
+
+<img src="images/android_resizer_toolkit_04.png" alt="The main features in step 1" style="width: 329px" />
+<div style="clear:both;"></div>
+<br />
+
+<ol>
+	<li><em>help button</em>: this will link to the online documentation (this page)</li>
+	<li><em>item size fields</em>: these two text input fields let you define the width and height attributes for a single exported element</li>
+	<li><em>set document size button</em>: clicking on this icon will set the <em>Item size</em> fields to the active document dimensions. This comes handy if you plan to export the document as a single image (for instance, an icon)</li>
+	<li><em>xhdpi fields</em>: if enabled (by selecting the checkbox), will export the images in a folder named <em>drawable-xhdpi</em>. The two text inputs will set the size of the images</li>
+	<li><em>hdpi fields</em>: as above, but the target folder will be <em>drawable-hdpi</em></li>
+	<li><em>mdpi fields</em>: as above, but the target folder will be <em>drawable-mdpi</em></li>
+	<li><em>ldpi fields</em>: as above, but the target folder will be <em>drawable-ldpi</em></li>
+	<li><em>next button</em>: this will open the second step of the resizer panel.</li>
+</ol>
+
+<h3>Step 2 - Setting the filenames, choosing the export path and generating the drawables</h3>
+
+Once the drawable dimensions are set you have access to the second panel:
+
+<img src="images/android_resizer_toolkit_051.png" alt="The main features in step 2" style="width: 329px" />
+<div style="clear:both;"></div>
+<br />
+
+<ol>
+	<li><em>help button</em>: as for panel 1, this will link to the online documentation (this page)</li>
+	<li><em>name list</em>: the file name for each generated  drawable. Clicking on the name will let you edit it. If you leave a text input empty, no drawable will be generated for that section (handy when you have some empty sections you don't want to export)</li>
+	<li><em>click to edit/clear button</em>: clicking on this button automatically clear the corresponding textfield and focus on it for typing. It's also useful if you want to exclude some items from exporting by clearing the name</li>
+	<li><em>generate sequential names button</em>: clicking on this button will rename the full list with the corresponding item, adding a four digit sequential number. This feature is usually chosen if you plan to export a sequence of frames (for instance for a progress bar)</li>
+	<li><em>enable/disable rollover item selection</em>: if enabled, rolling over an item on the list will select the corresponding area on the active document</li>
+	<li><em>resample method menu</em>: this will select the method for resizing the images. The default value is <em>bicubic</em></li>
+	<li><em>animation-list export parameters</em>: if enabled (by selecting the toggle button), an animation-list xml file will be exported in the <em>drawable</em> folder of the export path (the directory will be generated if it does not exists). The first text input will be used as the name of the file, while the second one id the duration (in ms) for each item in the sequence</li>
+	<li><em>export path</em>: the directory where all the drawables will be exported. You can choose your Android project <em>res</em> folder and the extension will take care of the rest</li>
+	<li><em>export drawable button</em>: when you are ready, simply click on this button to start the export process.</li>
+	<li><em>back button</em>: this will open the first step of the resizer panel.</li>
+</ol>
+
+<h3>Size Validation</h3>
+
+When you insert the drawable size, you will get a warning if some size won't be an integer, as shown below.<br />
+
+<img src="images/android_resizer_toolkit_06.png" alt="Size validation"style="width: 329px" />
+<div style="clear:both;"></div>
+
+Please note that you will be able to export the files anyway, but the width or height will be rounded.
+
+Also note that you can export some files that will have a higher width or height than the original section, but these will obviously appear pixelated.
+
+<h2>Tutorial - Exporting an Icon</h2>
+
+<em>This tutorial shows how to export a single image with Photoshop as a multi resolution drawable in your android project. It is based on Photoshop CS6 (but it can be easily ported to Photoshop CS5).</em>
+
+<h3>1. Download and Install the Extension</h3>
+
+If you don't have the extension installed in Photoshop, please <a href="android_resizer_toolkit.zip" title="Android Resizer Toolkit Documentation">download it now</a> (it's free!).
+
+<h3>2. Opening the Panel</h3>
+
+We will be using a battery image, like the following one (96x148 pixels):<br />
+
+<a href="images/battery.png"><img src="images/battery.png" alt="Picture 1 - The battey image" style="width: 96px" /></a>
+<div style="clear:both;"></div>
+
+Open this file in Photoshop and then the Android Resizer Toolkit (<em>Window &gt; Extensions &gt; Android Resizer Toolkit</em>).
+
+Click the Set <em>document size button</em>; <em>width</em> and <em>height</em> should be filled with 96 and 148 values.
+
+We want the mdpi drawable to be 48dpi wide, so insert this value in the first text input in <em>mdpi</em>.
+
+All the fields should be auto-completed, as shown in picture 2.
+
+<img src="images/tutorial_android_resizer_toolkit_01.png" alt="The image size set"  style="width: 329px" />
+<div style="clear:both;"></div>
+
+Click the <em>Next</em> button to open step 2.
+
+<h3>3. Naming and Exporting the Icon</h3>
+
+The list should have a single item named <em>element0000</em>. Click on it and rename it <em>battery</em>. Leave the <em>Resample method</em> value as it is.<br />
+
+<img src="images/tutorial_android_resizer_toolkit_02.png" alt="Picture 3 - Renaming the image" style="width: 329px" />
+<div style="clear:both;"></div>
+
+Open the export directory selection by clicking on the <em>Select path</em> button. Navigate to your chosen directory and confirm (for instance your android project <em>res</em> folder).
+
+You are now ready to export the images. Click on <em>Export drawables</em> and let Photoshop do the rest. An image named <em>battery.png</em> will be generated for each selected resolution, as shown in picture 4.
+
+<a href="images/tutorial_android_resizer_toolkit_03_big.png"><img src="images/tutorial_android_resizer_toolkit_03.png" alt="Picture 4 - The exported image" style="width: 329px" /></a>
+<div style="clear:both;"></div>
+
+<h2>Tutorial – Exporting an Animation-List Sequence</h2>
+
+<em>This tutorial shows how to export a sequence of images with Photoshop as a multi resolution drawable animation-list in your android project. It is based on Photoshop CS6 (but it can be easily ported to Photoshop CS5).</em>
+
+<h3>1. Download and Install the Extension</h3>
+
+If you don't have the extension installed in Photoshop, please <a href="android_resizer_toolkit.zip" title="Android Resizer Toolkit Documentation">download it now</a>.
+
+<h3>2. Opening the Panel</h3>
+
+First of all open the following document (1024x2048 pixels) in Photoshop.
+
+<a href="images/pulse_holo_blue.png"><img src="images/pulse_holo_blue_small.png" alt="The sprite sheet" style="width: 490px" /></a>
+<div style="clear:both;"></div>
+
+The image has four columns and eight rows, each sized 256x256 pixels. Some elements are empty: we will see later how to exclude them from the export process.
+
+Open the <em>Android Resizer Toolkit</em> and insert 256 in both <em>width</em> and <em>height</em> attributes.
+Enable <em>ldpi</em> exporting by clicking on the corresponding checkbox.
+
+Insert 265 in the first text input of <em>xhdpi</em>; all the other elements should be auto-completed correspondingly.<br />
+
+<img src="images/android_resizer_toolkit_tutorial_01.png" alt="Setting the frames size"  style="width: 329px" />
+<div style="clear:both;"></div>
+
+Click the <em>Next</em> button to proceed to the next panel.
+
+<h3>3. Setting the Animation Attributes</h3>
+
+The new panel should display a list with 32 elements (<em>element0000</em> to <em>element0031</em>); to get the exact area corresponding to each element in the list, you can toggle the <em>Enable selection rollover</em> button next to the list.
+
+Click on any element of the list, rename it <em>pulse</em> and then click on the corresponding arrow. The full list will be renamed (<em>pulse0000</em> to <em>pulse0031</em>).
+
+Now, exclude the empty sections from the export process, by removing the text from the last seven elements in the list (<em>pulse0025</em> to <em>pulse0031</em>); to speed the process, you can click on the pencil button on each list element.
+
+Toggle the <em>Export animation-list</em> button and insert a filename (I have used <em>pulse-anim</em>) and a frame duration (in my case 80ms).<br />
+
+<img src="images/android_resizer_toolkit_tutorial_02.png" alt="Setting the animation attributes"  style="width: 329px" />
+<div style="clear:both;"></div>
+
+<h3>3. Exporting the Animation List</h3>
+
+You are now ready to export the sequence, by selecting a folder and clicking the <em>Export drawables</em> button: you will get a folder (if t does not already exist) for each selected resolution containing the frame sequence and the drawable folder containing the xml animation list.
+
+
       </section>
     </div>
 
