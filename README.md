@@ -1,5 +1,7 @@
 # Android Resizer Toolkit
 
+_Please note that this project is no longer under active developement._
+
 This tool lets you batch resize images with Photoshop CS5 and CS 6 for Android.
 
 To compile the projects you will need Adobe Extension Builder 2.
