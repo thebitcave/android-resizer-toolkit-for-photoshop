@@ -10,4 +10,4 @@ Please note that, as [Adobe has dropped support for Flash on Photoshop](http://b
 
 ## Documentation
 
-Documentation and Tutorials can be found on [GitHub Pages](http://marcosecchi.github.io/android_resizer_toolkit/).
+Documentation and Tutorials can be found on [GitHub Pages](http://thebitcave.github.io/android-resizer-toolkit-for-photoshop/).
